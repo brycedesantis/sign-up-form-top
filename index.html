@@ -33,11 +33,11 @@
             <form action="" method="get" class="sign-up-form">
                 <div class="sign-up-input first-name">
                     <label for="first-name">First Name*</label>
-                    <input type="text" id="first-name" name="first-name" placeholder="Name" required>
+                    <input type="text" id="first-name" name="first-name" placeholder="Name" required minlength="3" maxlength="15">
                 </div>
                 <div class="sign-up-input last-name">
                     <label for="last-name">Last Name*</label>
-                    <input type="text" id="last-name" name="last-name" placeholder="Name" required>
+                    <input type="text" id="last-name" name="last-name" placeholder="Name" required minlength="3" maxlength="15">
                 </div>
                 <div class="sign-up-input email">
                     <label for="email">Email</label>
@@ -53,8 +53,9 @@
                 </div>
                 <div class="sign-up-input confirm">
                     <label for="confirm">Confirm Password*</label>
-                    <input type="text" name="confirm" id="confirm">
+                    <input type="text" name="confirm" id="confirm" required>
                 </div>
+                <button type="submit">Create Account</button>
             </form>
         </div>
     </div>

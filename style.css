@@ -1,3 +1,10 @@
+:root {
+    --main-color: #F1DEC9;
+    --main-text-color: #A4907C;
+    --button-background: #C8B6A6;
+    --button-text: #8D7B68;
+}
+
 @font-face {
     font-family: Nordic;
     src: url(./assets/Norse-Bold.otf);
@@ -17,6 +24,7 @@ body {
     margin: 0;
     padding: 0;
     overflow: hidden;
+    background-color: var(--main-color)
 }
 
 .container {
@@ -76,12 +84,12 @@ body {
     align-items: flex-start;
     height: 100vh;
     margin-left: 80px;
-    margin-top: 150px;
+    font-family: Oswald;
+    color: var(--main-text-color)
 }
 
 section {
     width: 60%;
-    font-family: Oswald;
     padding: 10px;
     font-size: 1.5em;
 }
@@ -106,4 +114,18 @@ section {
     width: 70%;
     margin-top: 15px;
     line-height: 1.5em;
+}
+
+button{
+    line-height: 3em;
+    width: 12em;
+    border: none;
+    border-radius: 15px;
+    background-color: var(--button-background);
+    color: var(--button-text);
+    cursor: pointer;
+}
+
+input:invalid{
+    border-color: lightsalmon;
 }
