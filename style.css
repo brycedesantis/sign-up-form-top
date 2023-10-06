@@ -73,16 +73,37 @@ body {
 .form-holder{
     display: flex;
     flex-direction: column;
-    justify-content: center;
     align-items: flex-start;
     height: 100vh;
     margin-left: 80px;
+    margin-top: 150px;
 }
 
 section {
     width: 60%;
     font-family: Oswald;
     padding: 10px;
-    margin-bottom: 25px;
-    font-size: 1.2em;
+    font-size: 1.5em;
+}
+
+.sign-up-form {
+    padding-left: 10px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    height: 40vh;
+    width: 40vw;
+}
+
+.sign-up-input{
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+}
+
+.sign-up-input > input {
+    width: 70%;
+    margin-top: 15px;
+    line-height: 1.5em;
 }
