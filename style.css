@@ -16,8 +16,6 @@
 body {
     margin: 0;
     padding: 0;
-    height: 100vh;
-    width: 100vh;
     overflow: hidden;
 }
 
@@ -70,4 +68,21 @@ body {
 #side {
     height: inherit;
     width: inherit;
+}
+
+.form-holder{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    height: 100vh;
+    margin-left: 80px;
+}
+
+section {
+    width: 60%;
+    font-family: Oswald;
+    padding: 10px;
+    margin-bottom: 25px;
+    font-size: 1.2em;
 }
