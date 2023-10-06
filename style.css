@@ -1,0 +1,73 @@
+@font-face {
+    font-family: Nordic;
+    src: url(./assets/Norse-Bold.otf);
+}
+
+@font-face {
+    font-family: Oswald;
+    src: url(./assets/Oswald/static/Oswald-Regular.ttf);
+}
+
+@font-face {
+    font-family: Oswald-Light;
+    src: url(./assets/Oswald/static/Oswald-Light.ttf);
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    width: 100vh;
+    overflow: hidden;
+}
+
+.container {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.images {
+    height: 60em;
+    width: 550px;
+}
+
+.logo-holder{
+    position: fixed;
+    top: 35vh;
+    background-color: rgba(0, 0, 0, 0.301);
+    width: inherit;
+    padding: 10px 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#logo{
+    height: 12vh;
+}
+
+.logo-holder>h2 {
+    color: white;
+    margin: 0;
+    font-size: 100px;
+    font-family: Nordic;
+    padding-left: 10px;
+}
+
+#credits {
+    position: fixed;
+    bottom: 25px;
+    left: 200px;
+}
+
+#credits, #credits>a {
+    color: white;
+    font-family: Oswald-Light;
+    font-size: 13px;
+}
+
+#side {
+    height: inherit;
+    width: inherit;
+}
