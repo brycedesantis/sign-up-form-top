@@ -42,18 +42,22 @@
                 <div class="sign-up-input email">
                     <label for="email">Email</label>
                     <input type="email" name="email" id="email" placeholder="example@example.com">
+                    <span class="error-message error-middle">Please enter a valid email address</span>
                 </div>
                 <div class="sign-up-input phone">
                     <label for="phone">Phone Number</label>
-                    <input type="tel" name="phone" id="phone" placeholder="(888) 888-8888">
+                    <input type="tel" name="phone" id="phone" placeholder="(888) 888-8888" pattern="[0-9]{10}">
+                    <span class="error-message error-middle">Please enter a vaild phone number</span>
                 </div>
                 <div class="sign-up-input password">
                     <label for="password">Password*</label>
-                    <input type="password" name="password" id="password" required>
+                    <input type="password" name="password" id="password" placeholder=" " required minlength="8">
+                    <span class="error-message error-bottom">Password must be at least 8 characters long</span>
                 </div>
                 <div class="sign-up-input confirm">
                     <label for="confirm">Confirm Password*</label>
-                    <input type="text" name="confirm" id="confirm" required>
+                    <input type="password" name="confirm" id="confirm" placeholder=" " required minlength="8">
+                    <span class="error-message error-bottom">Password must be at least 8 characters long</span>
                 </div>
                 <button type="submit">Create Account</button>
             </form>

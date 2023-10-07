@@ -3,6 +3,8 @@
     --main-text-color: #A4907C;
     --button-background: #C8B6A6;
     --button-text: #8D7B68;
+    --hover-background: #6D8B74;
+    --hover-color: #EFEAD8;
 }
 
 @font-face {
@@ -40,7 +42,7 @@ body {
 
 .logo-holder{
     position: fixed;
-    top: 35vh;
+    top: 22vh;
     background-color: rgba(0, 0, 0, 0.301);
     width: inherit;
     padding: 10px 0;
@@ -108,6 +110,7 @@ section {
     display: flex;
     flex-direction: column;
     width: 50%;
+    padding-bottom: 2em;
 }
 
 .sign-up-input > input {
@@ -126,6 +129,39 @@ button{
     cursor: pointer;
 }
 
-input:invalid{
-    border-color: lightsalmon;
+button:hover {
+    background-color: var(--hover-background);
+    color: var(--hover-color);
+}
+
+input {
+    border: none;
+}
+
+.error-message {
+    color: #900;
+    font-size: 80%;
+    width: 71%;
+    position: fixed;
+    display: none;
+}
+
+.error-middle {
+    bottom: 340px;
+}
+
+.error-bottom {
+    bottom: 235px;
+}
+
+input:not(:focus):not(:placeholder-shown):invalid{
+    border: 1px solid #900;
+}
+
+input:not(:focus):not(:placeholder-shown):invalid ~ .error-message {
+    display: block;
+}
+
+input:not(:focus):not(:placeholder-shown):valid {
+    border: 1px solid rgb(92, 238, 92);
 }
